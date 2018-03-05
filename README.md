@@ -28,6 +28,9 @@
     # ssh
     paramiko
 
+    # 定时任务
+    django-crontab
+
 
 > 异常处理
 
