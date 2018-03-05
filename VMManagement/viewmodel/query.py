@@ -5,7 +5,5 @@ from VMManagement.models import ServerInfo
 
 
 def queryAll():
-    print("中文")
-    servers_info = serializers.serialize("json", ServerInfo.objects.all(), ensure_ascii=False,)
-    print(servers_info)
+    servers_info = serializers.serialize("json", ServerInfo.objects.all(), ensure_ascii=False)
     return servers_info
