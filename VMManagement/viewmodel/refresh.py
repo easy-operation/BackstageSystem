@@ -59,11 +59,11 @@ def server_info(obj):
 
 # 连接远程服务器,执行cmd
 # 入参：host主机名（IP）、cmd（执行的shell）
-def execute(host, passwd, cmd):
+def execute(host, password, cmd):
     try:
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(host, 22, 'root', passwd, timeout=1)
+        ssh.connect(host, 22, 'root', password, timeout=0.1)
         gevent.sleep(0)  # 切换协程
         stdin, stdout, stderr = ssh.exec_command(cmd)
         re = stdout.read().decode('utf-8')  # 将 b'example\n' 转化为 'example'

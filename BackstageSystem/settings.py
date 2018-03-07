@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'VMManagement.apps.VmmanagementConfig',
+    'FileManagement',  # 文件管理app
 ]
 
 MIDDLEWARE = [

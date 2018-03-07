@@ -6,7 +6,7 @@ from VMManagement import views as index
 
 urlpatterns = [
     path('', index.index),
-    path('all/', index.all),
+    path('operations/vm/all/', index.all),
     path('refresh/', index.refresh_view),
     path('operations/vm/increase/', index.increase_vm_view),
     path('admin/', admin.site.urls),

@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-from django.core import serializers
 
-from VMManagement.models import ServerInfo
+from VMManagement import models
+from VMManagement.viewmodel import serialize
 
 
 def queryAll():
-    servers_info = serializers.serialize("json", ServerInfo.objects.all(), ensure_ascii=False)
-    return servers_info
+    data = models.ServerInfo.objects.all().order_by("ip")
+    serializer = models.ServerInfoSerializer(data, many=True)
+    print(serializer.data)
+    return serialize.JSONResponse(serializer.data)

@@ -20,6 +20,18 @@
     # ssh2 scp 相关
     http://www.361way.com/python-paramiko-ssh/3984.html
 
+    # 前端组件
+    https://www.jianshu.com/p/011d308d7dd7
+
+    # 表格
+    https://github.com/jbaysolutions/vue-bootstrap-table
+
+    # 后台管理
+    https://www.cnblogs.com/herozhou/p/7434931.html
+
+    # 前台使用
+    http://blog.csdn.net/fungleo/article/details/77601761
+
 > 模块
 
     # 数据库驱动
@@ -30,6 +42,9 @@
 
     # 定时任务
     django-crontab
+
+    # 项目打包
+    setuptools
 
 
 > 异常处理

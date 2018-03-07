@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from django.shortcuts import render
+
 from VMManagement.viewmodel.increase import increase_vm
 from VMManagement.viewmodel.query import queryAll
 from VMManagement.viewmodel.refresh import refresh
@@ -28,3 +30,5 @@ def increase_vm_view(request):
         return HttpResponse("成功")
     else:
         return HttpResponse(status)
+
+
