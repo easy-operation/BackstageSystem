@@ -14,7 +14,6 @@ def index(request):
 
 def all(request):
     data = queryAll()
-    print(data)
     return HttpResponse(data)
 
 
